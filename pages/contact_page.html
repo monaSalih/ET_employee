@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../image/orange-logo.svg">
+    <!--font awosome icon start-->
+    <script
+      src="https://kit.fontawesome.com/62ca34cbb0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!---font awosome icon  end-->
+    <link
+      rel="shortcut icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Orange_logo.svg/1200px-Orange_logo.svg.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boosted@5.3.2/dist/css/orange-helvetica.min.css"
+      rel="stylesheet"
+      integrity="sha384-A0Qk1uKfS1i83/YuU13i2nx5pk79PkIfNFOVzTcjCMPGKIDj9Lqx9lJmV7cdBVQZ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boosted@5.3.2/dist/css/boosted.min.css"
+      rel="stylesheet"
+      integrity="sha384-fyenpx19UpfUhZ+SD9o9IdxeIJKE6upKx0B54OcXy1TqnO660Qw9xw6rOASP+eir"
+      crossorigin="anonymous"
+    />
+
+    <title>Student Profile</title>
+<!-- external style link -->
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <!-- sticky navbar -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <div class="navbar-brand">
+                    <a class="stretched-link" href="#">
+                        <img src="../image/orange-logo.svg" width="50" height="50" alt="" id="Logo" loading="lazy" />
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse align-items-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">
+                                Student Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Employment Status</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Survey_Tool.html">Survey Tool</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- background_section -->
+    </header>
+    <section class="bg-dark">
+        <div class="container ">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-md-6 text-center">
+                    <h1 class="text-primary p-2 d-flex justify-content-end ">Employee Tracking System</h1>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="d-flex  justify-content-end " >
+                        <ul class="list-unstyled d-flex fs-4 text-white" >
+                            <li class="nav-item d-inline-block me-3">
+                                <i class="fas fa-search"></i>
+                            </li>
+                            <li class="nav-item d-inline-block">عربي</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <!-- the main body contain 2section -->
+   <main>
+    <div class="container ">
+      <div >
+        <form class="d-flex navbar-item mt-2 " role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-primary btn-inverse" type="submit">Search</button>
+          </form>
+          <div class="row work_space mt-3">
+              <div class="col-6 align-items-center justify-content-center form_section">
+          <!-- form section -->
+          <div class="form_section">
+            <h3 class="form_container text-primary">Contact Info:</h3>
+            <hr class="background_hr" />
+            <form>
+              <fieldset>
+                <!-- input for number one -->
+                <div class="mb-3">
+                  <label
+                    for="requiredTextInput"
+                    class="form-label is-required"
+                  >
+                    Mobile Number #1:</label
+                  >
+                  <input
+                    type="text"
+                    id="requiredTextInput"
+                    class="form-control"
+                    placeholder="077XXXXXXX"
+                    readonly="readonly"
+                  />
+                </div>
+                <!--input for number two -->
+                <div class="mb-3">
+                  <label for="requiredSelect" class="form-label is-required"
+                    >Mobile Number #2</label
+                  >
+                  <input
+                    type="text"
+                    id="requiredTextInput"
+                    class="form-control"
+                    placeholder="077XXXXXXX"
+                    readonly="readonly"
+                  />
+                </div>
+                <!--input for email-->
+                <div class="mb-3">
+                  <label for="" class="form-label">Email</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="mail@domain.com"
+                    readonly="readonly"
+                  />
+                </div>
+                <!-- input for Reference Mobile Number  -->
+                <div class="mb-3">
+                  <label for="requiredSelect" class="">
+                    Reference Mobile Number:</label
+                  >
+                  <input
+                    type="text"
+                    id="requiredTextInput"
+                    class="form-control"
+                    placeholder="077XXXXXXX"
+                    readonly="readonly"
+                  />
+                </div>
+                <!-- input for linkedIn link -->
+                <div class="mb-3">
+                  <label for="requiredSelect" class="">
+                    LinkedIn profile:<span class="visually-hidden">
+                      (required)</span
+                    ></label
+                  >
+                  <input
+                    type="text"
+                    id="requiredTextInput"
+                    class="form-control"
+                    placeholder="https://www.linkedin.com/in/user_profile/"
+                    readonly="readonly"
+                  />
+                </div>
+               <a class="btn btn-primary float-end mb-3" href="./contact_page/contact_edit_page.html">Edit</a>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <!-- image section -->
+        <div class="image_section text-center col-5 d-flex justify-content-center ms-5">
+            <div class="inner_photo_con">
+                <img
+                    src="../image/download_img/contact_student.jpg"
+                    class=" img-fluid "
+                    alt=""
+                />
+            </div>
+        </div>
+          </div>
+      
+      </div>
+    </div>
+  </main>
+
+     <!-- Footer start-->
+     <footer class="footer bg-dark navbar-dark pt-5">
+        <div class="container-xxl footer-title-content">
+          <div class="d-flex justify-content-center footer_form_sectoin">
+            <h3 class="pe-5">Sign up to our mailing list</h3>
+            <form
+              class="d-flex col-12 col-md-9 col-lg-7 col-xl-6 col-xxl-5 gap-2 gap-md-3"
+            >
+              <label for="inputEmail" class="visually-hidden">Email</label>
+              <input
+                type="email"
+                class="form-control text-bg-dark border-dark"
+                id="inputEmail"
+                placeholder="Enter your email"
+              />
+              <button
+                type="submit"
+                class="btn btn-primary btn-inverse text-nowrap"
+              >
+                Sign up
+              </button>
+            </form>
+          </div>
+        </div>
+        <hr />
+        <div class="container-xxl footer-nav">
+          <nav
+            class="accordion accordion-dark"
+            id="accordion2"
+            aria-label="Sitemap footer 2"
+          >
+            <div class="row">
+              <div class="footer-column col-md-4">
+                <h3 class="accordion-header footer-heading" id="headingTwo2">
+                  <button
+                    class="accordion-button collapsed container-xxl px-1 d-md-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo2"
+                    aria-expanded="true"
+                    aria-controls="collapseTwo2"
+                  >
+                    Orange Jordan
+                  </button>
+                  <span class="d-none d-md-flex">Orange Jordan</span>
+                </h3>
+                <div
+                  id="collapseTwo2"
+                  class="container-xxl accordion-collapse collapse"
+                  aria-labelledby="headingTwo2"
+                  data-bs-parent="#accordion2"
+                >
+                  <ul class="navbar-nav">
+                    <li>
+                      <a class="nav-link" href="#" aria-describedby="headingTwo2"
+                        >About Orange</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-link" href="#" aria-describedby="headingTwo2"
+                        >Annual reports</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-link" href="#" aria-describedby="headingTwo2"
+                        >Sustainability reports</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-link" href="#" aria-describedby="headingTwo2"
+                        >Compliance & Fraud</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-link" href="#" aria-describedby="headingTwo2"
+                        >Distributor's corner</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-link" href="#" aria-describedby="headingTwo2"
+                        >Legal</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-link" href="#" aria-describedby="headingTwo2"
+                        >Privacy Policy</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-column col-md-4">
+                <h3 class="accordion-header footer-heading" id="headingThree2">
+                  <button
+                    class="accordion-button collapsed container-xxl px-1 d-md-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree2"
+                    aria-expanded="true"
+                    aria-controls="collapseThree2"
+                  >
+                    Business
+                  </button>
+                  <span class="d-none d-md-flex">Business</span>
+                </h3>
+                <div
+                  id="collapseThree2"
+                  class="container-xxl accordion-collapse collapse"
+                  aria-labelledby="headingThree2"
+                  data-bs-parent="#accordion2"
+                >
+                  <ul class="navbar-nav">
+                    <li>
+                      <a
+                        class="nav-link"
+                        href="/codingacademy"
+                        aria-describedby="headingThree2"
+                        >Coding Academy</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-column col-md-4">
+                <h3 class="accordion-header footer-heading" id="headingFour2">
+                  <button
+                    class="accordion-button collapsed container-xxl px-1 d-md-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour2"
+                    aria-expanded="true"
+                    aria-controls="collapseFour2"
+                  >
+                    Corporate
+                  </button>
+                  <span class="d-none d-md-flex">Corporate</span>
+                </h3>
+                <div
+                  id="collapseFour2"
+                  class="container-xxl accordion-collapse collapse"
+                  aria-labelledby="headingFour2"
+                  data-bs-parent="#accordion2"
+                >
+                  <ul class="navbar-nav">
+                    <li>
+                      <a class="nav-link" href="#" aria-describedby="headingFour2"
+                        >About us</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="nav-link"
+                        href="/help"
+                        aria-describedby="headingFour2"
+                        >Help</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="nav-link"
+                        href="/terms"
+                        aria-describedby="headingFour2"
+                        >Terms & Conditions</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <hr />
+        <div class="container-xxl footer-terms">
+          <div class="d-flex justify-content-around">
+            <ul class="navbar-nav gap-2 flex-row align-self-start">
+              <li class="footer-heading me-md-3">Follow Us</li>
+              <li>
+                <a
+                  href="#"
+                  class="btn btn-icon btn-social btn-twitter btn-inverse"
+                  ><span class="visually-hidden">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="btn btn-icon btn-social btn-facebook btn-inverse"
+                  ><span class="visually-hidden">Facebook</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="btn btn-icon btn-social btn-instagram btn-inverse"
+                  ><span class="visually-hidden">Instagram</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="btn btn-icon btn-social btn-youtube btn-inverse"
+                  ><span class="visually-hidden">YouTube</span></a
+                >
+              </li>
+            </ul>
+            <ul class="navbar-nav gap-md-3">
+              <li class="fw-bold">© Orange 2023</li>
+              <li><a class="nav-link" href="#">Terms and conditions</a></li>
+              <li><a class="nav-link" href="#">Privacy</a></li>
+              <li><a class="nav-link" href="#">Accessibility statement</a></li>
+              <li><a class="nav-link" href="#">Cookie policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer end-->
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/boosted@5.3.2/dist/js/boosted.bundle.min.js"
+        integrity="sha384-+lAXqnipqQpjxMdd/9Hp2GOzB4aIouKEYRZ7AE66h68BDob7UlMLpZY7w7SqrC+M"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js"
+        integrity="sha384-xRa5B8rCDfdg0npZcxAh+RXswrbFk3g6dlHVeABeluN8EIwdyljz/LqJgc2R3KNA"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
