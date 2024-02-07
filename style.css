@@ -6,7 +6,11 @@ body{
     display: none;
     color: red;
 }
+/* image height */
 
+.img-fluid{
+  height: 83%;
+}
 /* popup msg style */
 .bg-model {
     width: 100%;

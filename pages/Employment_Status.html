@@ -61,17 +61,17 @@
                 <div class="collapse navbar-collapse align-items-end" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="../index.html">
+                            <a class="nav-link active" aria-current="page" href="./index.html">
                                 Student Profile</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Employment Status</a>
+                            <a class="nav-link" href="./Employment_Status.html">Employment Status</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Survey Tool</a>
+                            <a class="nav-link" href="./pages/survey_tool_page.html">Survey Tool</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contact_page.html">Contacts</a>
+                            <a class="nav-link" href="./pages/contact_page.html">Contacts</a>
                         </li>
                     </ul>
                 </div>
@@ -98,98 +98,99 @@
             </div>
         </div>
     </section>
-   <!-- the main body contain 2section -->
-   <main>
-    <div class="container ">
-      <div >
-        <form class="d-flex navbar-item mt-2 " role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-primary btn-inverse" type="submit">Search</button>
-          </form>
-          <div class="row work_space mt-3">
-              <div class="col-6 align-items-center justify-content-center form_section">
-          <!-- form section -->
-          <div class="form_section">
-            <h3 class="form_container">ٍStudent Info:</h3>
-            <hr class="background_hr w-25" />
-            <form>
-              <fieldset>
-                <!-- input for Email -->
-                <div class="mb-3">
-                  <label
-                    for="requiredTextInput"
-                    class="form-label is-required"
-                  >
-                    Email:</label
-                  >
-                  <input
-                    type="text"
-                    id="requiredTextInput"
-                    class="form-control"
-                    placeholder="mail@domain.com"
-                    readonly="readonly"
-                  />
-                </div>
-                <hr class="spread_hr" />
-                <!--Survey tool -->
-                <h3 class="form_container">Survey Tools:</h3>
-                <hr class="background_hr w-25" />
+    <!-- Main section starts here -->
+    <!-- Section 1: Info -->
+     <div class="container ">
+            <div >
+              <form class="d-flex navbar-item mt-2 " role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary btn-inverse" type="submit">Search</button>
+                </form>
+                <div class="row work_space mt-3">
+                    <div class="col-6 align-items-center justify-content-center form_section">
                 
-                <!--upload folder-->
-                <div class="mb-3">
-                  <label for="" class="form-label">Upload Folder</label>
-                  <div class="mb-3">
-                    <input type="file" class="form-control" id="inputGroupFile02">
+                <!-- details section -->
+                <h3 >
+                    Job coach feedback
+                </h3>
+                <hr class="background_hr w-50" />
+
+                <input
+                        type="text"
+                        id="requiredTextInput"
+                        class="form-control"
+                        placeholder="Full time employee"
+                        readonly="readonly"
+                      />
+
+                <h3 class=" mt-3">
+                    Employment
+                </h3>
+                <hr class="background_hr w-25" />
+
+                <input
+                        type="text"
+                        id="requiredTextInput"
+                        class="form-control"
+                        placeholder="Full time employee"
+                        readonly="readonly"
+                      />
+                      
+            <!-- table section -->
+                <h3 class=" mt-3">
+                    Experience:
+                </h3>
+                <hr class="background_hr w-25" />
+                <table class="table table-hover">
+                    <caption class="visually-hidden">Student Employment Status</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Job Title</th>
+                        <th scope="col">Company Name </th>
+                        <th scope="col">Start Date</th>
+                        <th scope="col">End Date</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><a href="./contact_page.html">
+                        <td scope="row">.Net developer </td>
+                        <td>Amazon</td>
+                        <td>11.02.2010</td>
+                        <td>10.10.2020</td>
+                     </a> </tr>
+                      <tr>
+                        <td scope="row">Software Engineer</td>
+                        <td>Mawdoo</td>
+                        <td>11.12.2020</td>
+                        <td>05.06.2022</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Data Analytics</th>
+                        <td>Stratos Consulting!</td>
+                        <td>12.06.2022</td>
+                        <td>Present</td>
+
+                      </tr>
+                    </tbody>
+                  </table>
+    
+                
+              </div>
+              <!-- image section -->
+              <div class="image_section text-center col-5 d-flex justify-content-center ms-5">
+                  <div class="inner_photo_con">
+                      <img
+                          src="../image/download_img/employee_status.jpg"
+                          class="img-fluid "
+                          alt=""
+                      />
                   </div>
+              </div>
                 </div>
-                <!-- input for submit url  -->
-                <div class="mb-3">
-                  <label for="requiredSelect" class="">
-                    Survey URL</label
-                  >
-                  <input
-                    type="text"
-                    id="requiredTextInput"
-                    class="form-control"
-                    placeholder="Enter URL"
-                    readonly="readonly"
-                  />
-                </div>
-                                
-                <div class="mb-3 mt-2">
-                  <!-- <button
-                    type="submit"
-                    id=""
-                    class="ms-2 btn btn-primary float-end btn-edit"
-                  >
-                    Edit
-                  </button> -->
-               
-                  <a class="btn btn-primary float-end mb-3" href="./survey_tool_pages/survey_responses.html">  Response</a>
-                  
-                  <a class="btn btn-primary float-end mb-3 me-2" href="./survey_tool_pages/survey_question.html">Add Question</a>
-                  
-                 
-                </div>
-              </fieldset>
-            </form>
-          </div>
-        </div>
-        <!-- image section -->
-        <div class="image_section text-center col-5 d-flex justify-content-center ms-5">
-            <div class="inner_photo_con">
-                <img
-                    src="../image/download_img/survey_website.jpg"
-                    class=" img-fluid "
-                    alt=""
-                />
+            
             </div>
-        </div>
           </div>
-      
-      </div>
-    </div>
-  </main>
+    
 
      <!-- Footer start-->
      <footer class="footer bg-dark navbar-dark pt-5">

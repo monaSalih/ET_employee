@@ -38,7 +38,7 @@
 
     <title>Student Profile</title>
 <!-- external style link -->
-<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
@@ -48,7 +48,7 @@
             <div class="container-fluid">
                 <div class="navbar-brand">
                     <a class="stretched-link" href="#">
-                        <img src="../../image/orange-logo.svg" width="50" height="50" alt="" id="Logo" loading="lazy" />
+                        <img src="../image/orange-logo.svg" width="50" height="50" alt="" id="Logo" loading="lazy" />
                     </a>
                 </div>
 
@@ -61,17 +61,17 @@
                 <div class="collapse navbar-collapse align-items-end" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../../index.html">
+                            <a class="nav-link " aria-current="page" href="../index.html">
                                 Student Profile</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Employment Status</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../survey_tool_page.html">Survey Tool</a>
+                            <a class="nav-link active" href="#">Survey Tool</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="../contact_page.html">Contacts</a>
+                            <a class="nav-link" href="./contact_page.html">Contacts</a>
                         </li>
                     </ul>
                 </div>
@@ -102,128 +102,74 @@
    <main>
     <div class="container ">
       <div >
-        
+        <form class="d-flex navbar-item mt-2 " role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-primary btn-inverse" type="submit">Search</button>
+          </form>
           <div class="row work_space mt-3">
               <div class="col-6 align-items-center justify-content-center form_section">
           <!-- form section -->
           <div class="form_section">
-            <h3 class="form_container">Edit Contact Info:</h3>
-            <hr class="background_hr" />
-            <form id="contact_form" autocomplete="off" novalidate>
+            <h3 class="form_container">ٍStudent Info:</h3>
+            <hr class="background_hr w-25" />
+            <form>
               <fieldset>
-                <!-- input for number one -->
+                <!-- input for Email -->
                 <div class="mb-3">
                   <label
-                    for="requiredTextInput1"
+                    for="requiredTextInput"
                     class="form-label is-required"
                   >
-                    Mobile Number #1:<span class="visually-hidden">
-                      (required)</span
-                    ></label
+                    Email:</label
                   >
                   <input
                     type="text"
-                    id="requiredTextInput1"
-                    class="form-control"
-                    placeholder="077XXXXXXX"
-                    required
-                    name="phone_num1"
-                  />
-                  <p class="validation_text message_phone1" id="">
-                    Please enter a valid Number
-                  </p>
-                </div>
-                <!--input for number two -->
-                <div class="mb-3">
-                  <label
-                    for="requiredTextInput2"
-                    class="form-label is-required"
-                    >Mobile Number #2<span class="visually-hidden">
-                      (required)</span
-                    ></label
-                  >
-                  <input
-                    type="text"
-                    id="requiredTextInput2"
-                    class="form-control"
-                    placeholder="077XXXXXXX"
-                    required
-                    name="phone_num2"
-                  />
-                  <p class="validation_text message_phone2">
-                    Please enter a valid Number
-                  </p>
-                </div>
-                <!--input for email-->
-                <div class="mb-3">
-                  <label for="requiredTextInput3" class="form-label"
-                    >Email</label
-                  >
-                  <input
-                    type="text"
-                    id="requiredTextInput3"
+                    id="requiredTextInput"
                     class="form-control"
                     placeholder="mail@domain.com"
-                    required
-                    name="email"
+                    readonly="readonly"
                   />
-                  <p class="validation_text message_email">
-                    Please enter a valid Email
-                  </p>
                 </div>
-                <!-- input for Reference Mobile Number  -->
+                <hr class="spread_hr" />
+                <!--Survey tool -->
+                <h3 class="form_container">Survey Tools:</h3>
+                <hr class="background_hr w-25" />
+                
+                <!--upload folder-->
                 <div class="mb-3">
-                  <label for="requiredTextInput4" class="">
-                    Reference Mobile Number:<span class="visually-hidden">
-                      (required)</span
-                    ></label
+                  <label for="" class="form-label">Upload Folder</label>
+                  <div class="mb-3">
+                    <input type="file" class="form-control" id="inputGroupFile02">
+                  </div>
+                </div>
+                <!-- input for submit url  -->
+                <div class="mb-3">
+                  <label for="requiredSelect" class="">
+                    Survey URL</label
                   >
                   <input
                     type="text"
-                    id="requiredTextInput4"
+                    id="requiredTextInput"
                     class="form-control"
-                    placeholder="077XXXXXXX"
-                    required
-                    name="phone_num3"
+                    placeholder="Enter URL"
+                    readonly="readonly"
                   />
-                  <p class="validation_text message_phone3">
-                    Please enter a valid Number
-                  </p>
                 </div>
-                <!-- input for linkedIn link -->
-                <div class="mb-3">
-                  <label for="requiredTextInput5" class="">
-                    LinkedIn profile:<span class="visually-hidden">
-                      (required)</span
-                    ></label
-                  >
-                  <input
-                    type="url"
-                    id="requiredTextInput5"
-                    class="form-control"
-                    placeholder="https://www.linkedin.com/in/user_profile/"
-                    required
-                    name="linked_url"
-                  />
-                  <p class="validation_text message_url">
-                    Please enter a valid URL link
-                  </p>
-                </div>
+                                
                 <div class="mb-3 mt-2">
-                  <button
+                  <!-- <button
                     type="submit"
-                    id="button_click"
+                    id=""
                     class="ms-2 btn btn-primary float-end btn-edit"
                   >
                     Edit
-                  </button>
-                  <button
-                    type="submit"
-                    id="button_cancel_page"
-                    class="btn btn-secondary float-end mb-3"
-                  >
-                    Cancel
-                  </button>
+                  </button> -->
+               
+                  <a class="btn btn-primary float-end mb-3" href="#">  Response</a>
+                  
+                  <a class="btn btn-primary float-end mb-3 me-2" href="./survey_tool_pages/survey_question.html">Add Question</a>
+                  
+                 
                 </div>
               </fieldset>
             </form>
@@ -231,12 +177,11 @@
         </div>
         <!-- image section -->
         <div class="image_section text-center col-5 d-flex justify-content-center ms-5">
-            <div class="inner_photo_con" >
+            <div class="inner_photo_con">
                 <img
-                    src="../../image/download_img/content-management-system.jpg"
-                    class="img-fluid "
+                    src="../image/download_img/survey_website.jpg"
+                    class=" img-fluid "
                     alt=""
-                    
                 />
             </div>
         </div>
@@ -463,23 +408,13 @@
       </footer>
       <!-- Footer end-->
 
-     <!-- popup message -->
-     <div class="bg-model">
-      <div class="model-contact">
-        <div class="close-button">+</div>
-        <img src="../../image/404-tick.png" alt="tick_img" />
-        <div class="msg-content">
-          The Data update successfully
-        </div>
-      </div>
-    </div>
+   
     <script src="https://cdn.jsdelivr.net/npm/boosted@5.3.2/dist/js/boosted.bundle.min.js"
         integrity="sha384-+lAXqnipqQpjxMdd/9Hp2GOzB4aIouKEYRZ7AE66h68BDob7UlMLpZY7w7SqrC+M"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js"
         integrity="sha384-xRa5B8rCDfdg0npZcxAh+RXswrbFk3g6dlHVeABeluN8EIwdyljz/LqJgc2R3KNA"
         crossorigin="anonymous"></script>
-        <script src="./main.js"></script>
 </body>
 
 </html>
