@@ -52,7 +52,9 @@ body{
     transform: rotate(45deg);
     cursor: pointer;
   }
-
+.form_container h3{
+color:#ff7900;
+}
 /* contact page style for validation && pop-up message END*/
 
 /* media query */

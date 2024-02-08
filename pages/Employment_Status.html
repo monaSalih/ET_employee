@@ -61,17 +61,17 @@
                 <div class="collapse navbar-collapse align-items-end" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">
+                            <a class="nav-link " aria-current="page" href="../index.html">
                                 Student Profile</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./Employment_Status.html">Employment Status</a>
+                            <a class="nav-link active" href="./Employment_Status.html">Employment Status</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/survey_tool_page.html">Survey Tool</a>
+                            <a class="nav-link" href="./survey_tool_page.html">Survey Tool</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/contact_page.html">Contacts</a>
+                            <a class="nav-link" href="./contact_page.html">Contacts</a>
                         </li>
                     </ul>
                 </div>
@@ -135,9 +135,10 @@
                         placeholder="Full time employee"
                         readonly="readonly"
                       />
-                      
+                      <a class="btn btn-primary float-end mb-3 mt-3" href="#">Edit</a>
+            
             <!-- table section -->
-                <h3 class=" mt-3">
+                <h3 class="mt-5">
                     Experience:
                 </h3>
                 <hr class="background_hr w-25" />
@@ -149,26 +150,32 @@
                         <th scope="col">Company Name </th>
                         <th scope="col">Start Date</th>
                         <th scope="col">End Date</th>
+                        <th scope="col">Edit</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr><a href="./contact_page.html">
+                     <tr data-href="./contact_page.html">
                         <td scope="row">.Net developer </td>
                         <td>Amazon</td>
                         <td>11.02.2010</td>
                         <td>10.10.2020</td>
-                     </a> </tr>
+                        <td><a href="./Employment_Status/Employment_Status_info.html"><i class="fas fa-edit"></i></a></td>
+                     </tr>
                       <tr>
                         <td scope="row">Software Engineer</td>
                         <td>Mawdoo</td>
                         <td>11.12.2020</td>
                         <td>05.06.2022</td>
+                        <td><a href="./Employment_Status/Employment_Status_info.html"><i class="fas fa-edit"></i></a></td>
+
                       </tr>
                       <tr>
                         <th scope="row">Data Analytics</th>
                         <td>Stratos Consulting!</td>
                         <td>12.06.2022</td>
                         <td>Present</td>
+                        <td><a href="./Employment_Status/Employment_Status_info.html"><i class="fas fa-edit"></i></a></td>
+
 
                       </tr>
                     </tbody>
